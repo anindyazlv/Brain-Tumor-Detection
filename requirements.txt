@@ -1,6 +1,5 @@
 streamlit
 ultralytics==8.2.60
-opencv-python-headless
 numpy==1.23.0
 Pillow
 matplotlib==3.3.0
