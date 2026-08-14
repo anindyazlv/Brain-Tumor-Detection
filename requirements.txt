@@ -1,7 +1,6 @@
 streamlit
-ultralytics==8.2.0
+ultralytics==8.2.60
 opencv-python-headless
 numpy==1.23.0
 Pillow
 matplotlib==3.3.0
-torch==1.8.0
