@@ -6,7 +6,7 @@ from utils import set_background
 
 set_background("./imgs/background.png")
 
-MODEL_PATH = "./model/best (1).pt"
+MODEL_PATH = "yolov8n.pt"
 
 header = st.container()
 body = st.container()
