@@ -2,8 +2,6 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 from ultralytics import YOLO
-import cv2
-from matplotlib import pyplot as plt
 from utils import set_background
 
 set_background("./imgs/background.png")
@@ -16,12 +14,12 @@ body = st.container()
 model = YOLO(MODEL_PATH)
 
 def model_prediction(img):
-    pred = model.predict(img)[0]
-    img_wth_box = pred.plot()
+    results = model.predict(img, verbose=False)
+    result = results[0]
+    annotated_img = result.plot()
 
-    return img_wth_box
+    return annotated_img
 
-    
 with header :
     _, col1, _ = st.columns([0.05,1,0.1])
     col1.title("Brain Tumor Detection 🧠")
