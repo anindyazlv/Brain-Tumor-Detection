@@ -6,7 +6,7 @@ from utils import set_background
 
 set_background("./imgs/background.png")
 
-MODEL_PATH = "yolov8n.pt"
+MODEL_PATH = "best.pt"
 
 header = st.container()
 body = st.container()
@@ -25,18 +25,18 @@ with header :
     col1.title("Brain Tumor Detection 🧠")
 
     _, col4, _ = st.columns([0.1,1,0.2])
-    col4.subheader("Computer Vision Detection with YoloV8")
+    col4.subheader("Computer Vision Detection with YOLO26")
 
     _, col5, _ = st.columns([0.05,1,0.1])
     col5.image("./imgs/train_batch6917.jpg")
 
-    st.write("This are the Brain Images that the Model was trained, during 25 epochs, using more than 3000 images.")
+    st.write("This are the Brain Images that the Model was trained, during 50 epochs, using more than 3000 images.")
 
     st.header("Brain Tumors Images Examples:")
     _, col2, _ = st.columns([0.1,1,0.2])
     col2.image("./imgs/val_batch2_pred.jpg")
 
-    st.write("The Model was trained with the Yolov8 Architecture, for 25 epochs, using the Google Colab GPU, and with more than 3000 Images.")
+    st.write("The Model was trained with the YOLO26 Architecture, for 50 epochs, using the Google Colab GPU, and with more than 3000 Images.")
 
 with body :
     _, col1, _ = st.columns([0.15,1,0.2])
