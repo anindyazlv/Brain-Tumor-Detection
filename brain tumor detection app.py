@@ -6,7 +6,7 @@ from utils import set_background
 
 set_background("./imgs/background.png")
 
-MODEL_PATH = "best.pt"
+MODEL_PATH = "./models/best.pt"
 
 header = st.container()
 body = st.container()
@@ -28,7 +28,7 @@ with header :
     col4.subheader("Computer Vision Detection with YOLO26")
 
     _, col5, _ = st.columns([0.05,1,0.1])
-    col5.image("./imgs/train_batch6917.jpg")
+    col5.image("./imgs/train_batch9242.jpg")
 
     st.write("This are the Brain Images that the Model was trained, during 50 epochs, using more than 3000 images.")
 
