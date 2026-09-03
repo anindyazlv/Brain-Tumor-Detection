@@ -4,8 +4,15 @@ A simple web-based Brain Tumor Detection application built with Streamlit and YO
 
 > ⚠️ Disclaimer: This application is intended for research and educational purposes only. It is not a medical diagnostic tool and should not be used as a substitute for professional medical diagnosis. Always consult a qualified medical professional for medical evaluation, diagnosis, and treatment decisions.
 
+---
+## Live Demo
+
+Try the deployed application here:
+
+[Open Brain Tumor Detection](https://yolo26-brain-tumor-detection.streamlit.app/)
 
 ---
+
 
 ## Features
 
